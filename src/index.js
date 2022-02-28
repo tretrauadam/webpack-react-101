@@ -1,3 +1,13 @@
-const name = "adam";y
+class Greeter {
+  constructor(name) {
+    this.name = name;
+  }
 
-console.log(name);
+  sayHello() {
+    debugger
+    document.body.innerHTML = `Hello ${this.name}!`;
+  }
+}
+
+const greeter = new Greeter("Boris");
+greeter.sayHello();
